@@ -1,0 +1,104 @@
+/* Estilo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Marko One", serif;
+  background-color: #a1d6a0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Sección principal */
+.Menu {
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+}
+
+/* Logo */
+.Menu img {
+  width: 110px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Títulos y subtítulos */
+.Menu h2 {
+  font-family: "Marko One", serif;
+  font-size: 28px;
+  margin: 0.5rem 0;
+}
+
+.Menu p {
+  font-family: "Habibi", serif;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+/* Botones de acción */
+.Identificación button {
+  width: 80%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  font-family: "Habibi", serif;
+  font-size: 16px;
+  background-color: #5a90c5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Identificación button:hover {
+  background-color: #417bb3;
+}
+
+/* Enlaces dentro de botones */
+.Identificación a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Enlace de registro */
+.Identificación p a {
+  color: #2e5d8a;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Línea divisoria */
+hr {
+  margin: 2rem 0;
+  border: none;
+  height: 1px;
+  background-color: #3a3a3a;
+  width: 90%;
+}
+
+/* Pie de página */
+.pie-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-family: "Habibi", serif;
+  margin-top: 1rem;
+}
+
+.pie-pagina li {
+  list-style: none;
+  margin: 0.3rem 0.8rem;
+}
+
+.pie-pagina a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.pie-pagina a:hover {
+  text-decoration: underline;
+}

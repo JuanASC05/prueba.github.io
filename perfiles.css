@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Habibi&family=Marko+One&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #a1d6a0; /* Verde claro */
+  font-family: "Habibi", serif;
+  display: flex;
+  justify-content: center;
+}
+
+.Perfil-general {
+  max-width: 420px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+h3,
+h4 {
+  font-family: "Marko One", serif;
+  font-size: 22px;
+  margin-bottom: 1rem;
+  color: #000;
+  text-align: center;
+}
+
+.Perfil img {
+  display: block;
+  margin: 1rem auto;
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Nombre-descripcion p,
+.Cursos p,
+.contacto p,
+.Informacion-agendar p,
+.Datos p {
+  font-size: 18px;
+  color: #000;
+  text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.Cursos button,
+.Informacion-agendar button {
+  display: block;
+  width: 90%;
+  margin: 0.5rem auto;
+  background-color: #5a90c5; /* Azul medio */
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem;
+  font-size: 16px;
+  font-family: "Habibi", serif;
+  cursor: pointer;
+}
+
+.Cursos button:hover,
+.Informacion-agendar button:hover {
+  background-color: #4178a5;
+}
+
+.contacto,
+.Datos,
+.Citas {
+  margin-top: 1.5rem;
+}
+
+.Citas-agendadas {
+  background-color: #d8e9f5;
+  padding: 1rem;
+  border-radius: 10px;
+  list-style: none;
+}
+
+.Citas-agendadas li {
+  margin-bottom: 0.8rem;
+  font-size: 17px;
+}
+
+.Canales img {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  .Perfil img {
+    width: 80%;
+  }
+
+  .Cursos button {
+    font-size: 15px;
+    width: 100%;
+  }
+}

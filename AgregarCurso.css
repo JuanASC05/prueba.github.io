@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Habibi&family=Marko+One&display=swap");
+
+body {
+  font-family: "Habibi", serif;
+  background-color: #a1d6a0;
+  color: #000;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+.Encabezado {
+  padding: 24px 16px 8px;
+  text-align: center;
+}
+
+.Encabezado h2 {
+  font-family: "Marko One", serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+.contenido {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form.contenido,
+form.actividades {
+  background-color: #a9cbe8;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-adulto {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-family: "Habibi", serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-family: "Habibi", serif;
+  font-size: 18px;
+  background-color: #a9cbe8;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  padding: 4px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 8px 0;
+}
+
+/* Actividades */
+form.actividades h3 {
+  font-family: "Marko One", serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* Botón Implementar */
+button[type="submit"] {
+  font-family: "Habibi", serif;
+  background-color: #5a90c5;
+  color: #000000;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+button[type="submit"]:hover {
+  background-color: #407ab1;
+}
+
+/* Icono de suma (puedes reemplazar por una imagen si usas una) */
+form.actividades img {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenido {
+    padding: 12px;
+  }
+
+  .Encabezado h2 {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  button[type="submit"] {
+    font-size: 16px;
+  }
+}

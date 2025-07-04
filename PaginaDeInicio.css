@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Habibi&family=Marko+One&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Habibi", serif;
+  background-color: #a1d6a0;
+  padding: 1rem;
+}
+
+/* ====== NAVIGATION ====== */
+.barra-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a1d6a0;
+  padding: 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+/* Parte izquierda del nav */
+.nav-izquierda {
+  display: flex;
+
+  gap: 1.5rem;
+}
+
+.nav-izquierda img {
+  height: 50px; /* Tamaño del logo principal */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Parte derecha del nav */
+.nav-derecha {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.barra-busqueda {
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: 200px;
+  font-family: "Habibi", serif;
+}
+
+/* Íconos del lado derecho */
+.icono {
+  height: 24px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Íconos por separado si deseas ajustarlos individualmente */
+.icono-lupa {
+  height: 20px;
+}
+.icono-perfil {
+  height: 26px;
+}
+.icono-menu {
+  height: 26px;
+}
+
+/* ====== SECCIÓN DE PROGRESO ====== */
+.Indicador-progreso {
+  background-color: #a8e7ff;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.Indicador-progreso h2 {
+  font-family: "Marko One", serif;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.lista {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.lista li {
+  margin-bottom: 0.25rem;
+}
+
+/* ====== CURSOS ====== */
+.Administrar-cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.curso {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.curso h2 {
+  font-family: "Marko One", serif;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion-curso {
+  font-family: "Habibi", serif;
+  font-size: 16px;
+  margin-bottom: 0.75rem;
+}
+
+.curso button {
+  width: 100%;
+  background-color: #5a90c5;
+  color: white;
+  font-family: "Habibi", serif;
+  font-size: 16px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.curso button a {
+  color: white;
+  text-decoration: none;
+}
+.chatbot-inicio {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid #d1d1d1;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  max-width: 600px;
+}
+
+.chatbot-inicio h2 {
+  color: #3e3e3e;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.chatbot-inicio p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.boton-chat {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-chat:hover {
+  background-color: #45a049;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .barra-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-derecha {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .barra-busqueda {
+    width: 100%;
+  }
+
+  .curso button {
+    font-size: 1rem;
+  }
+
+  .Indicador-progreso h2,
+  .curso h2 {
+    font-size: 20px;
+  }
+}

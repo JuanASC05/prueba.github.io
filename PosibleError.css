@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Habibi&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #A1D6A0; /* Verde claro */
+  font-family: 'Habibi', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Contenido-error {
+  text-align: center;
+}
+
+.Contenido-error img {
+  width: 120px;
+  height: 120px;
+  background-color: #000; /* símbolo negro */
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.Contenido-error img::before {
+  content: "!";
+  color: white;
+  font-size: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-family: 'Marko One', serif;
+}
+
+.Contenido-error h2 {
+  font-family: 'Marko One', serif;
+  font-size: 28px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.Contenido-error p {
+  font-size: 16px;
+}
